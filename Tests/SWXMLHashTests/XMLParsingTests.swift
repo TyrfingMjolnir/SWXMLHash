@@ -302,9 +302,13 @@ class XMLParsingTests: XCTestCase {
 
         XCTAssertNotNil(err)
 
+#if os(Linux)
+        print("Skip \(#function) - line check on Linux")
+#else
         if err != nil {
             XCTAssert(err!.line == 1)
         }
+#endif
     }
 }
 
