@@ -285,7 +285,7 @@ class XMLParsingTests: XCTestCase {
         XCTAssertEqual(subIndexer[1].element?.text, "Fantasy")
         XCTAssertEqual(subIndexer[2].element?.text, "5.95")
     }
-    
+
     func testShouldThrowErrorForInvalidXML() {
         let invalidXML = "<uh oh>what is this"
         var err: ParsingError? = nil
@@ -338,7 +338,7 @@ extension XMLParsingTests {
             ("testShouldStillReturnErrorsWhenAccessingViaSubscripting", testShouldStillReturnErrorsWhenAccessingViaSubscripting),
             ("testShouldBeAbleToCreateASubIndexerFromFilter", testShouldBeAbleToCreateASubIndexerFromFilter),
             ("testShouldBeAbleToFilterOnIndexer", testShouldBeAbleToFilterOnIndexer),
-	    ("testShouldThrowErrorForInvalidXML", testShouldThrowErrorForInvalidXML)
+            ("testShouldThrowErrorForInvalidXML", testShouldThrowErrorForInvalidXML)
         ]
     }
 }

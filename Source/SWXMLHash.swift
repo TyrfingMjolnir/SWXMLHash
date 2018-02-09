@@ -423,7 +423,7 @@ class FullXMLParser: NSObject, SimpleXmlParser, XMLParserDelegate {
             current.addText(cdataText)
         }
     }
-    
+
     func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
 #if os(Linux)
         if let err = parseError as? NSError {
